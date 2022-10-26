@@ -1,0 +1,487 @@
+html, body {
+    background-color: black;
+}
+
+
+h1 {
+    position: absolute;
+    top: -50%;
+    font-size: 30pt;
+    color: white;
+    font-family: tahoma;
+    padding-bottom: 25px;
+}
+
+
+ul {
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+
+@keyframes barHover {
+    0% {
+        background-color: white;
+    }, 100% {
+        background-color: grey;
+    }
+
+}
+
+
+.App {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.AppHUD_Root {
+    margin-bottom: 20px;
+    padding: 18pt;
+    position: absolute;
+    left: 2.5%;
+    bottom: 0%;
+    width: 92.5%;
+    height: 16%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: skyblue;
+    background-color: slategray;
+}
+
+
+.AppHUD_Root:hover {
+    animation: barHover 0.5s;
+    background-color: skyblue;
+}
+
+
+.AppHUD_Menu {
+    position: absolute;
+    top: 1%;
+    width: 80%;
+    height: 20%;
+    z-index: -1;
+}
+
+
+.AppHUD_Menu_Inventory {
+    margin-bottom: 75px;
+    position: fixed;
+    bottom: 10%;
+    width: 30%;
+    height: 0%;
+    background-color: slategrey;
+    color: white;
+    text-align: left;
+}
+
+
+.AppHUD_Menu_Inventory:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Button_AppHUD_Menu_Inventory {
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+    width: 26%;
+    height: 105;
+    background-color: skyblue;
+    color: white;
+    z-index: 666;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+}
+
+
+.Button_AppHUD_Menu_Inventory:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Inventory {
+    position: absolute;
+    padding-bottom: 100px;
+    bottom: 50%;
+    height: 600px;
+    width: 100%;
+    background-color: slategrey;
+    font-size: 10pt;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Column {
+    list-style: none;
+    columns: 3;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Slot {
+    padding: 0px;
+    margin: 0px;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Slot:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character {
+    position: absolute;
+    right: 9%;
+    top: 8%;
+    width: 25%;
+    height: 80%;
+    background-color: skyblue;
+    text-align: center;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Head {
+    position: absolute;
+    right: 19%;
+    top: 9%;
+    width: 62%;
+    height: 20%;
+    background-color: black;
+    color: white;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Head:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Torso {
+    position: absolute;
+    right: 19%;
+    top: 30%;
+    width: 62%;
+    height: 30%;
+    background-color: black;
+    color: white;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Torso:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Legs {
+    position: absolute;
+    right: 19%;
+    top: 61%;
+    width: 62%;
+    height: 30%;
+    background-color: black;
+    color: white;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Legs:hover {
+    animation: barHover 0.5s;
+}
+
+
+.AppHUD_Menu_Abilities {
+    margin-bottom: 75px;
+    position: fixed;
+    bottom: 14%;
+    left: 34.35%;
+    width: 30%;
+    height: 44.59%;
+    background-color: slategrey;
+    color: white;
+    text-align: left;
+}
+
+
+.AppHUD_Menu_Abilities:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Button_AppHUD_Menu_Abilities {
+    position: absolute;
+    left: 40%;
+    bottom: 105%;
+    width: 25%;
+    height: 105;
+    background-color: skyblue;
+    color: white;
+    z-index: 666;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+}
+
+
+.Button_AppHUD_Menu_Abilities:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Abilities {
+    position: absolute;
+    bottom: 90%;
+    width: 100%;
+    height: 100%;
+    background-color: slategrey;
+    text-align: left;
+}
+
+
+.Menu_AppHUD_Menu_Inventory_Character_Spec {
+    display: block;
+    text-align: center;
+}
+
+
+.AppHUD_Menu_Quests {
+    position: fixed;
+    left: 67.85%;
+    bottom: 10%;
+    width: 25%;
+    height: 90%;
+    background-color: slategrey;
+}
+
+
+.AppHUD_Menu_Quests:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Button_AppHUD_Menu_Quests {
+    position: absolute;
+    left: 84%;
+    bottom: 40px;
+    width: 26%;
+    height: 50px;
+    background-color: skyblue;
+    color: white;
+    z-index: 666;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+}
+
+
+.Menu_AppHUD_Menu_Quests {
+    position: absolute;
+    bottom: 90%;
+    width: 20%;
+    height: 86%;
+    background-color: slategrey;
+    color: white;
+    text-align: right;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List {
+    position: absolute;
+    left: 90%;
+    width: 80%;
+    height: 80%;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest {
+    margin-top: 10px;
+    width: 200%;
+    height: 35%;
+    background-color: black;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details {
+    float: left;
+    margin-top: 15px;
+    margin-left: 250px;
+    width: 200%;
+    height: 35%;
+    background-color: black;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm {
+    position: absolute;
+    top: 41.5%;
+    margin-top: -100px;
+    margin-left: 250px;
+    width: 200%;
+    height: 57.5%;
+    background-color: darkblue;
+    z-index: 665;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Tank {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Tank:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_DPS {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_DPS:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Healer {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Healer:hover {
+    animation: barHover 0.5s;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Go {
+    margin-top: -20px;
+    width: 180px;
+    height: 65px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 25px;
+    font-size: 20pt;
+    text-align: center;
+}
+
+
+.Menu_AppHUD_Menu_Quests_List_Quest_Details_Confirm_Go:hover {
+    animation: barHover 0.5s;
+}
+
+
+.HealthBar_Root {
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 9%;
+    left: 15px;
+    width: 30%;
+    height: 50%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: skyblue;
+    background-color: black;
+}
+
+
+.HealthBar_Element0 {
+    position: absolute;
+    top: 25%;
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    height: 75%;
+    border-radius: 25px;
+    opacity: 50%;
+}
+
+
+.HealthBar_Element0:hover {
+    animation: barHover 0.5s;
+}
+
+
+.ManaBar_Root {
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 9%;
+    left: 625px;
+    width: 30%;
+    height: 50%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: skyblue;
+    background-color: black;
+}
+
+
+.ManaBar_Element0 {
+    position: absolute;
+    top: 25%;
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    height: 75%;
+    border-radius: 25px;
+    opacity: 80%;
+}
+
+
+.ManaBar_Element0:hover {
+    animation: barHover 0.5s;
+}
+
+
+.StaminaBar_Root {
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 9%;
+    left: 1250px;
+    width: 30%;
+    height: 50%;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: skyblue;
+    background-color: black;
+}
+
+
+.StaminaBar_Element0 {
+    position: absolute;
+    top: 25%;
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+    height: 75%;
+    border-radius: 25px;
+    opacity: 90%;
+}
+
+
+.StaminaBar_Element0:hover {
+    animation: barHover 0.5s;
+}
